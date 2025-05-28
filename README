@@ -1,0 +1,109 @@
+Agricost Tracker App – Object-Oriented Programming in Python + SQLAlchemy
+#Learning Goals
+Understand the basics of Object-Oriented Programming (OOP)
+
+Learn how to build and use class relationships (One-to-Many and Many-to-Many)
+
+Work with a relational database using SQLAlchemy ORM
+
+Build a Command-Line Interface (CLI) for interacting with data
+
+Practice writing modular Python code using packages and files
+
+#Key Vocab
+Class: A blueprint for creating objects (e.g., Crop, Market, PriceEntry)
+
+Object: An instance of a class
+
+Relationship: How different classes are linked (e.g., Crop has many PriceEntries)
+
+Session: A way to manage DB operations in SQLAlchemy
+
+Validation: Ensuring data is correct before storing or processing
+
+#Introduction
+In this project, you're building a system to track crop prices across different markets in Kenya. The goal is to help farmers, traders, and analysts monitor prices for better decision-making.
+
+The project uses 3 main models:
+
+Crop – the product being sold (e.g., Maize, Beans)
+
+Market – where the crop is being sold (e.g., Nairobi Market)
+
+PriceEntry – records the crop, market, price per kg, and date
+
+How to Run the Project
+Clone or download this repository
+
+Navigate to the project folder in your terminal
+
+Install dependencies (if needed):
+
+bash
+Copy
+Edit
+pipenv install sqlalchemy
+Run database seed (optional):
+
+bash
+Copy
+Edit
+python seed.py
+Start the CLI app:
+
+bash
+Copy
+Edit
+python main.py
+📦 Key Features by Class
+# Crop Class
+Set name and description
+
+View all crops
+
+Update or delete a crop
+
+See all price entries for this crop
+
+# Market Class
+Set name and location
+
+View all markets
+
+Update or delete a market
+
+See all price entries in this market
+
+# PriceEntry Class
+Connects a crop and a market
+
+Records price per kg and entry date
+
+Filter price entries by crop, market, or date
+
+Update or delete price entries
+
+Example Usage
+Add a new crop: “Maize – staple cereal crop”
+
+Add a market: “Nakuru Market – located in Nakuru County”
+
+Record a price: Maize at Nakuru for 45.50 KES/kg on 2024-05-20
+
+View all prices for Maize or filter by date
+
+     
+Future Improvements
+Add user login and role-based access
+
+Add analytics for average crop prices over time
+
+Add export to CSV feature
+
+Bonus Learning
+Explore SQLAlchemy relationships (relationship, ForeignKey)
+
+Practice CRUD operations via a CLI
+
+Use filters and joins for data analysis
+
