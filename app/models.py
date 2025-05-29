@@ -20,7 +20,7 @@ class Market(Base):
     name = Column(String(50), nullable=False, unique=True)
     location = Column(String(100), nullable=False)
 
-    price_entries = relationship("PriceEntry", back_populates="market")
+    price_entries = relationship("PriceEntry", back_populates="market", cascade="all, delete")
 
 class PriceEntry(Base):
     __tablename__ = 'price_entries'
@@ -30,7 +30,7 @@ class PriceEntry(Base):
     entry_date = Column(DateTime, default=datetime.utcnow)
 
     crop_id = Column(Integer, ForeignKey("crops.id"), nullable=False)
-    market_id = Column(Integer, ForeignKey("markets.id"), nullable=False)
+    market_id = Column(Integer, ForeignKey("markets.id"))
 
     crop = relationship("Crop", back_populates="price_entries")
     market = relationship("Market", back_populates="price_entries")

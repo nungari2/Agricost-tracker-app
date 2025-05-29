@@ -22,7 +22,7 @@ Session: A way to manage DB operations in SQLAlchemy
 Validation: Ensuring data is correct before storing or processing
 
 #Introduction
-In this project, you're building a system to track crop prices across different markets in Kenya. The goal is to help farmers, traders, and analysts monitor prices for better decision-making.
+In this project, you are building a system to track crop prices across different markets in Kenya. The goal is to help farmers, traders, and analysts monitor prices for better decision-making.
 
 The project uses 3 main models:
 
@@ -32,7 +32,7 @@ Market – where the crop is being sold (e.g., Nairobi Market)
 
 PriceEntry – records the crop, market, price per kg, and date
 
-How to Run the Project
+## How to Run the Project
 Clone or download this repository
 
 Navigate to the project folder in your terminal
@@ -55,7 +55,7 @@ bash
 Copy
 Edit
 python main.py
-📦 Key Features by Class
+## Key Features by Class
 # Crop Class
 Set name and description
 
